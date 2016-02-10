@@ -1,20 +1,21 @@
 // bin/bot.js
+//API token: xoxb-20687771329-eBf0ZZQSeL5zAE3rYwKzpbth
 
 'use strict';
 
-// import norrisbot
-var NorrisBot = require('../lib/norrisbot');
+// import scraperbot
+var ScraperBot = require('../lib/scraperbot');
  
-var token = process.env.BOT_API_KEY;
+var token = "xoxb-20687771329-eBf0ZZQSeL5zAE3rYwKzpbth";
 var dbPath = process.env.BOT_DB_PATH;
 var name = process.env.BOT_NAME;
 
-// instantiate norrisbot
-var norrisbot = new NorrisBot({
+// instantiate scraperbot
+var scraperbot = new ScraperBot({
 	token: token,
 	dbPath: dbPath,
 	name: name
 });
 
-// launch norrisbot
-norrisbot.run();
+// launch scraperbot
+scraperbot.run();
