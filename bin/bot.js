@@ -7,7 +7,7 @@
 var ScraperBot = require('../lib/scraperbot');
  
 var token = "xoxb-20687771329-eBf0ZZQSeL5zAE3rYwKzpbth";
-var dbPath = process.env.BOT_DB_PATH;
+var dbPath = "data/external_crawl_settings.db";
 var name = process.env.BOT_NAME;
 
 // instantiate scraperbot
