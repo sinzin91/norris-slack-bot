@@ -1,12 +1,11 @@
 // bin/bot.js
-//API token: xoxb-20687771329-eBf0ZZQSeL5zAE3rYwKzpbth
 
 'use strict';
 
 // import scraperbot
 var ScraperBot = require('../lib/scraperbot');
  
-var token = "xoxb-20687771329-eBf0ZZQSeL5zAE3rYwKzpbth";
+var token = process.env.SCRAPERBOT_TOKEN;
 var dbPath = "data/external_crawl_settings.db";
 var name = process.env.BOT_NAME;
 
